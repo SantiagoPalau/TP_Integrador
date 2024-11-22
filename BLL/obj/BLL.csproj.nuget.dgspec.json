@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\UAI\\2024\\2do Cuatrimestre\\Desarrollo y Arquitectura de Software (Programacion)\\Trabajo Práctico Integrador\\BLL\\BLL.csproj": {}
+    "C:\\Users\\ryzen\\OneDrive\\Documentos\\GitHub\\TP_Integrador\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\UAI\\2024\\2do Cuatrimestre\\Desarrollo y Arquitectura de Software (Programacion)\\Trabajo Práctico Integrador\\BLL\\BLL.csproj": {
+    "C:\\Users\\ryzen\\OneDrive\\Documentos\\GitHub\\TP_Integrador\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\UAI\\2024\\2do Cuatrimestre\\Desarrollo y Arquitectura de Software (Programacion)\\Trabajo Práctico Integrador\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\ryzen\\OneDrive\\Documentos\\GitHub\\TP_Integrador\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\User\\Desktop\\UAI\\2024\\2do Cuatrimestre\\Desarrollo y Arquitectura de Software (Programacion)\\Trabajo Práctico Integrador\\BLL\\BLL.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\UAI\\2024\\2do Cuatrimestre\\Desarrollo y Arquitectura de Software (Programacion)\\Trabajo Práctico Integrador\\BLL\\obj\\",
+        "projectPath": "C:\\Users\\ryzen\\OneDrive\\Documentos\\GitHub\\TP_Integrador\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\ryzen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ryzen\\OneDrive\\Documentos\\GitHub\\TP_Integrador\\BLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ryzen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
