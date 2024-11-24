@@ -15,6 +15,21 @@ namespace Entity.Model
         [ DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdReserva {  get; set; }
         [Required ]
-        public DateTime horario { get; set; }
+        public DateTime Horario { get; set; }
+        [Required ]
+        public double Seña {  get; set; }
+        [Required ] 
+        public int CantidadComensales {  get; set; }
+         
+        public int DNI {  get; set; }
+        [ForeignKey("DNI")]
+        [Required]
+        public Cliente Cliente { get; set; }
+        public int NumeroMesa { get; set; }
+        [ForeignKey("NumeroMesa")]
+        [Required]
+        public Mesa Mesa { get; set; }
+
+
     }
 }

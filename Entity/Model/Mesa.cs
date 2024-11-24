@@ -14,7 +14,7 @@ namespace Entity.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity) ]
         public int NumeroMesa { get; set; }
         [Required ]
-        [MinLength(1) ]
+       
         public int CantidadAsientos {  get; set; }
         [Required ]
         public bool Disponible { get; set; }

@@ -11,7 +11,7 @@ namespace Entity.Model
     {
         [ Key]
         [Required ]
-        public int ID { get; set; }
+        public int DNI { get; set; }
         [Required ]
         [MinLength(5) ]
         public string Usuario { get; set; }
