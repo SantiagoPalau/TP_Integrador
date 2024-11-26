@@ -16,5 +16,21 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Formulario2_Registro_ formulario = new Formulario2_Registro_();
+                formulario.Show();
+                this.Close();
+
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

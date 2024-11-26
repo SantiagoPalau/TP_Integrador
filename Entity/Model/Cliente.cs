@@ -20,6 +20,9 @@ namespace Entity.Model
         [MinLength(5) ]
         public string Contraseña {  get; set; }
         [Required]
+        public bool Admin {  get; set; }
+
+        [Required]
         public string Nombre {  get; set; }
         [Required]
         public string Apellido { get; set; }
