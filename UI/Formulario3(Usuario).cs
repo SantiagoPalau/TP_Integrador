@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Entity;
+using Mapper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,32 @@ namespace UI
         public Formulario3_Usuario_()
         {
             InitializeComponent();
+        }
+
+        private void btnReserva_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ReservaEntity reserva = new ReservaEntity()
+                {
+                    CantidadComensales = Convert.ToInt32(txtComensales),
+                    Horario = Convert.ToDateTime(cmbHorarios.SelectedValue),
+                    // Mesa= getbyNumerodeMesa(comboboxdemesa)
+                    Seña = Convert.ToDouble(txtSeñaReserva),
+                    
+
+                    // Cliente= getbyidcliente(variable del form 1)
+
+
+
+
+                };
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

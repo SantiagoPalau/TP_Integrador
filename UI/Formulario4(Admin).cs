@@ -27,10 +27,43 @@ namespace UI
 
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnModificarSeña_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // metodo para modificar seña (idreserva,nuevaseña)
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+
+            }
+        }
+
+        private void btnAgregarMesa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //metodo de agregar mesa(cantidaddeasientos)
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnEliminarMesa_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

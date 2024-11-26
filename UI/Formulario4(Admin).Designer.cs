@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            groupBox3 = new GroupBox();
+            dataGridView1 = new DataGridView();
             btnModificarSeña = new Button();
             txtIdReserva = new TextBox();
             textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            btnAgregarMesa = new Button();
-            btnEliminarMesa = new Button();
-            textBox3 = new TextBox();
-            dataGridView1 = new DataGridView();
+            groupBox2 = new GroupBox();
             dataGridView2 = new DataGridView();
-            dataGridView3 = new DataGridView();
-            btnEliminar = new Button();
-            button1 = new Button();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            btnEliminarMesa = new Button();
+            btnAgregarMesa = new Button();
+            groupBox3 = new GroupBox();
             textBox4 = new TextBox();
+            button1 = new Button();
+            btnEliminar = new Button();
+            dataGridView3 = new DataGridView();
             button2 = new Button();
             groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             SuspendLayout();
             // 
@@ -66,32 +66,13 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Reservas";
             // 
-            // groupBox2
+            // dataGridView1
             // 
-            groupBox2.Controls.Add(dataGridView2);
-            groupBox2.Controls.Add(textBox3);
-            groupBox2.Controls.Add(textBox2);
-            groupBox2.Controls.Add(btnEliminarMesa);
-            groupBox2.Controls.Add(btnAgregarMesa);
-            groupBox2.Location = new Point(420, 67);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(329, 467);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Mesas";
-            // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(textBox4);
-            groupBox3.Controls.Add(button1);
-            groupBox3.Controls.Add(btnEliminar);
-            groupBox3.Controls.Add(dataGridView3);
-            groupBox3.Location = new Point(814, 67);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(319, 467);
-            groupBox3.TabIndex = 2;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Usuarios";
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(11, 26);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(304, 307);
+            dataGridView1.TabIndex = 6;
             // 
             // btnModificarSeña
             // 
@@ -101,6 +82,7 @@
             btnModificarSeña.TabIndex = 3;
             btnModificarSeña.Text = "Modificar Seña";
             btnModificarSeña.UseVisualStyleBackColor = true;
+            btnModificarSeña.Click += btnModificarSeña_Click;
             // 
             // txtIdReserva
             // 
@@ -118,47 +100,19 @@
             textBox1.Size = new Size(145, 23);
             textBox1.TabIndex = 5;
             // 
-            // textBox2
+            // groupBox2
             // 
-            textBox2.Location = new Point(183, 390);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Numero de Mesa";
-            textBox2.Size = new Size(131, 23);
-            textBox2.TabIndex = 6;
-            // 
-            // btnAgregarMesa
-            // 
-            btnAgregarMesa.Location = new Point(54, 346);
-            btnAgregarMesa.Name = "btnAgregarMesa";
-            btnAgregarMesa.Size = new Size(80, 38);
-            btnAgregarMesa.TabIndex = 7;
-            btnAgregarMesa.Text = "Agregar Mesa";
-            btnAgregarMesa.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminarMesa
-            // 
-            btnEliminarMesa.Location = new Point(210, 346);
-            btnEliminarMesa.Name = "btnEliminarMesa";
-            btnEliminarMesa.Size = new Size(80, 38);
-            btnEliminarMesa.TabIndex = 8;
-            btnEliminarMesa.Text = "Eliminar Mesa";
-            btnEliminarMesa.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(21, 390);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Cantidad de Asientos";
-            textBox3.Size = new Size(131, 23);
-            textBox3.TabIndex = 9;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(11, 26);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(304, 307);
-            dataGridView1.TabIndex = 6;
+            groupBox2.Controls.Add(dataGridView2);
+            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(btnEliminarMesa);
+            groupBox2.Controls.Add(btnAgregarMesa);
+            groupBox2.Location = new Point(420, 67);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(329, 467);
+            groupBox2.TabIndex = 1;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Mesas";
             // 
             // dataGridView2
             // 
@@ -168,22 +122,62 @@
             dataGridView2.Size = new Size(304, 307);
             dataGridView2.TabIndex = 7;
             // 
-            // dataGridView3
+            // textBox3
             // 
-            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView3.Location = new Point(6, 35);
-            dataGridView3.Name = "dataGridView3";
-            dataGridView3.Size = new Size(304, 307);
-            dataGridView3.TabIndex = 10;
+            textBox3.Location = new Point(21, 390);
+            textBox3.Name = "textBox3";
+            textBox3.PlaceholderText = "Cantidad de Asientos";
+            textBox3.Size = new Size(131, 23);
+            textBox3.TabIndex = 9;
             // 
-            // btnEliminar
+            // textBox2
             // 
-            btnEliminar.Location = new Point(37, 348);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(85, 38);
-            btnEliminar.TabIndex = 11;
-            btnEliminar.Text = "Eliminar usuario";
-            btnEliminar.UseVisualStyleBackColor = true;
+            textBox2.Location = new Point(183, 390);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Numero de Mesa";
+            textBox2.Size = new Size(131, 23);
+            textBox2.TabIndex = 6;
+            // 
+            // btnEliminarMesa
+            // 
+            btnEliminarMesa.Location = new Point(210, 346);
+            btnEliminarMesa.Name = "btnEliminarMesa";
+            btnEliminarMesa.Size = new Size(80, 38);
+            btnEliminarMesa.TabIndex = 8;
+            btnEliminarMesa.Text = "Eliminar Mesa";
+            btnEliminarMesa.UseVisualStyleBackColor = true;
+            btnEliminarMesa.Click += btnEliminarMesa_Click;
+            // 
+            // btnAgregarMesa
+            // 
+            btnAgregarMesa.Location = new Point(54, 346);
+            btnAgregarMesa.Name = "btnAgregarMesa";
+            btnAgregarMesa.Size = new Size(80, 38);
+            btnAgregarMesa.TabIndex = 7;
+            btnAgregarMesa.Text = "Agregar Mesa";
+            btnAgregarMesa.UseVisualStyleBackColor = true;
+            btnAgregarMesa.Click += btnAgregarMesa_Click;
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(textBox4);
+            groupBox3.Controls.Add(button1);
+            groupBox3.Controls.Add(btnEliminar);
+            groupBox3.Controls.Add(dataGridView3);
+            groupBox3.Location = new Point(814, 67);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(319, 467);
+            groupBox3.TabIndex = 2;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Usuarios";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(84, 392);
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "DNI";
+            textBox4.Size = new Size(162, 23);
+            textBox4.TabIndex = 13;
             // 
             // button1
             // 
@@ -194,13 +188,22 @@
             button1.Text = "Establecer como Admin";
             button1.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // btnEliminar
             // 
-            textBox4.Location = new Point(84, 392);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "DNI";
-            textBox4.Size = new Size(162, 23);
-            textBox4.TabIndex = 13;
+            btnEliminar.Location = new Point(37, 348);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(85, 38);
+            btnEliminar.TabIndex = 11;
+            btnEliminar.Text = "Eliminar usuario";
+            btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.Location = new Point(6, 35);
+            dataGridView3.Name = "dataGridView3";
+            dataGridView3.Size = new Size(304, 307);
+            dataGridView3.TabIndex = 10;
             // 
             // button2
             // 
@@ -225,12 +228,12 @@
             Text = "Formulario4_Admin_";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ResumeLayout(false);
         }

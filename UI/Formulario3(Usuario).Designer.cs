@@ -33,15 +33,20 @@
             button1 = new Button();
             button2 = new Button();
             label2 = new Label();
-            comboBox1 = new ComboBox();
+            cmbHorarios = new ComboBox();
             label3 = new Label();
+            txtSeñaReserva = new TextBox();
+            txtComensales = new TextBox();
+            cmbMesas = new ComboBox();
+            label4 = new Label();
+            btnReserva = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(604, 95);
+            dataGridView1.Location = new Point(495, 95);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(522, 391);
             dataGridView1.TabIndex = 0;
@@ -49,7 +54,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(604, 77);
+            label1.Location = new Point(495, 77);
             label1.Name = "label1";
             label1.Size = new Size(52, 15);
             label1.TabIndex = 1;
@@ -57,7 +62,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(786, 44);
+            button1.Location = new Point(674, 44);
             button1.Name = "button1";
             button1.Size = new Size(96, 48);
             button1.TabIndex = 2;
@@ -66,7 +71,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(921, 44);
+            button2.Location = new Point(800, 44);
             button2.Name = "button2";
             button2.Size = new Size(96, 48);
             button2.TabIndex = 3;
@@ -82,13 +87,13 @@
             label2.TabIndex = 4;
             label2.Text = "Realizar reserva";
             // 
-            // comboBox1
+            // cmbHorarios
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(79, 161);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(118, 23);
-            comboBox1.TabIndex = 5;
+            cmbHorarios.FormattingEnabled = true;
+            cmbHorarios.Location = new Point(79, 161);
+            cmbHorarios.Name = "cmbHorarios";
+            cmbHorarios.Size = new Size(118, 23);
+            cmbHorarios.TabIndex = 5;
             // 
             // label3
             // 
@@ -99,13 +104,61 @@
             label3.TabIndex = 6;
             label3.Text = "Horario";
             // 
+            // txtSeñaReserva
+            // 
+            txtSeñaReserva.Location = new Point(79, 204);
+            txtSeñaReserva.Name = "txtSeñaReserva";
+            txtSeñaReserva.PlaceholderText = "Seña";
+            txtSeñaReserva.Size = new Size(118, 23);
+            txtSeñaReserva.TabIndex = 7;
+            // 
+            // txtComensales
+            // 
+            txtComensales.Location = new Point(79, 256);
+            txtComensales.Name = "txtComensales";
+            txtComensales.PlaceholderText = "Comensales";
+            txtComensales.Size = new Size(121, 23);
+            txtComensales.TabIndex = 8;
+            // 
+            // cmbMesas
+            // 
+            cmbMesas.FormattingEnabled = true;
+            cmbMesas.Location = new Point(79, 309);
+            cmbMesas.Name = "cmbMesas";
+            cmbMesas.Size = new Size(118, 23);
+            cmbMesas.TabIndex = 9;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(88, 291);
+            label4.Name = "label4";
+            label4.Size = new Size(40, 15);
+            label4.TabIndex = 10;
+            label4.Text = "Mesas";
+            // 
+            // btnReserva
+            // 
+            btnReserva.Location = new Point(88, 362);
+            btnReserva.Name = "btnReserva";
+            btnReserva.Size = new Size(90, 55);
+            btnReserva.TabIndex = 11;
+            btnReserva.Text = "Agregar Reserva";
+            btnReserva.UseVisualStyleBackColor = true;
+            btnReserva.Click += btnReserva_Click;
+            // 
             // Formulario3_Usuario_
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1208, 624);
+            Controls.Add(btnReserva);
+            Controls.Add(label4);
+            Controls.Add(cmbMesas);
+            Controls.Add(txtComensales);
+            Controls.Add(txtSeñaReserva);
             Controls.Add(label3);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbHorarios);
             Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -125,7 +178,12 @@
         private Button button1;
         private Button button2;
         private Label label2;
-        private ComboBox comboBox1;
+        private ComboBox cmbHorarios;
         private Label label3;
+        private TextBox txtSeñaReserva;
+        private TextBox txtComensales;
+        private ComboBox cmbMesas;
+        private Label label4;
+        private Button btnReserva;
     }
 }
