@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            txtDNI = new TextBox();
             linkLabel1 = new LinkLabel();
             btnIngreso = new Button();
             txtContraseña = new TextBox();
@@ -40,7 +39,6 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(txtDNI);
             groupBox1.Controls.Add(linkLabel1);
             groupBox1.Controls.Add(btnIngreso);
             groupBox1.Controls.Add(txtContraseña);
@@ -53,14 +51,6 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Ingreso de Usuario";
-            // 
-            // txtDNI
-            // 
-            txtDNI.Location = new Point(95, 144);
-            txtDNI.Name = "txtDNI";
-            txtDNI.PlaceholderText = "DNI";
-            txtDNI.Size = new Size(205, 23);
-            txtDNI.TabIndex = 5;
             // 
             // linkLabel1
             // 
@@ -85,7 +75,7 @@
             // 
             // txtContraseña
             // 
-            txtContraseña.Location = new Point(95, 222);
+            txtContraseña.Location = new Point(95, 192);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PlaceholderText = "Contraseña";
             txtContraseña.Size = new Size(205, 23);
@@ -93,7 +83,7 @@
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(95, 183);
+            txtUsuario.Location = new Point(95, 154);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.PlaceholderText = "Usuario";
             txtUsuario.Size = new Size(205, 23);
@@ -131,6 +121,5 @@
         private Button btnIngreso;
         private TextBox txtContraseña;
         private TextBox txtUsuario;
-        private TextBox txtDNI;
     }
 }

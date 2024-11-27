@@ -8,7 +8,7 @@ namespace Entity
 {
     public  class ClienteEntity
     {
-        private int dNI;
+        private int iD;
         private string usuario;
         private string nombre;
         private string apellido;
@@ -17,7 +17,7 @@ namespace Entity
         private string telefono;
         private string direccion;
 
-        public int DNI { get => dNI; set => dNI = value; }
+      
         public string Usuario { get => usuario; set => usuario = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
@@ -25,5 +25,6 @@ namespace Entity
         public string Telefono { get => telefono; set => telefono = value; }
         public string Direccion { get => direccion; set => direccion = value; }
         public bool Admin { get => admin; set => admin = value; }
+        public int ID { get => iD; set => iD = value; }
     }
 }

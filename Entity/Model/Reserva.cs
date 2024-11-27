@@ -21,8 +21,8 @@ namespace Entity.Model
         [Required ] 
         public int CantidadComensales {  get; set; }
          
-        public int DNI {  get; set; }
-        [ForeignKey("DNI")]
+        public int ID {  get; set; }
+        [ForeignKey("ID")]
         [Required]
         public Cliente Cliente { get; set; }
         public int NumeroMesa { get; set; }

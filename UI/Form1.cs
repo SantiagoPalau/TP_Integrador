@@ -14,10 +14,12 @@ namespace UI
             try
             {
                 ClienteEntity cliente = new ClienteEntity();
-                cliente.DNI = Convert.ToInt32(txtDNI.Text);
+                
                 cliente.Usuario = txtUsuario.Text;
                 cliente.Contraseña = txtContraseña.Text;
-                //metodo de buscar usuario por DNI y setear en capa data el resto de datos que no son seteados aca
+                
+               
+                //metodo de buscar usuario por usuario y setear en capa data el resto de datos que no son seteados aca
                 if (cliente.Admin == true)
                 {
                     // si es cuenta admin abre el formulario de administracion de las cuentas admin
